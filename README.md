@@ -1,10 +1,6 @@
-# keycloak-ip-authenticator
+# keycloak-bdsso
 
-This is a simple Keycloak Java Authenticator that checks if the user is coming from a trusted network or not. If the user is coming from a trusted network MFA step is skipped. If the user is coming from a non-trusted network MFA step is forced.
-
-The authenticator has to be used together with `Conditional OTP Form` component.
-
-See the following Youtube video which explains how to deploy and configure it in Keycloak: https://youtu.be/u36QK9oyrtM.
+This is a simple Keycloak Java Authenticator that checks if the user and send it to BD SSO. 
 
 ## build
 
@@ -21,6 +17,6 @@ mvn package
 And then, assuming `$KEYCLOAK_HOME` is pointing to you Keycloak installation, just copy it into deployments directory:
  
 ```bash
-cp target/keycloak-ip-authenticator.jar $KEYCLOAK_HOME/standalone/deployments/
+cp target/keycloak-bdsso.jar $KEYCLOAK_HOME/standalone/deployments/
 ```
 # keycloak-bdsso

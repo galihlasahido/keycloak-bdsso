@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Dependencies: org.keycloak.keycloak-adapter-spi, org.keycloak.keycloak-adapter-core, org.keycloak.keycloak-common, org.keycloak.keycloak-core, org.bouncycastle.bcprov-jdkon
